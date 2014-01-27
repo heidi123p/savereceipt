@@ -9,6 +9,9 @@ gem 'sqlite3'
 #picture uploader
 gem 'carrierwave'
 
+#thumbnails
+gem 'mini_magick','3.5.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 

@@ -18,7 +18,7 @@
       <tr>
         <td><%= receipt.name %></td>
         <td><%= receipt.store %></td>
-        <td><%= receipt.picture %></td>
+        <td><%= image_tag receipt.picture_url(:thumb) if receipt.picture? %></td>
         <td><%= receipt.email_contents %></td>
         <td><%= link_to 'Show', receipt %></td>
         <td><%= link_to 'Edit', edit_receipt_path(receipt) %></td>
